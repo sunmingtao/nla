@@ -1,0 +1,44 @@
+table {
+	border:none;
+	border-collapse: collapse;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+table.book {
+	width: 680px; 
+}
+
+table.person {
+	width: 1300px; 
+}
+
+td, th {
+	border: 1px solid transparent;
+	text-align: left; 
+}
+
+th {
+	background: #DFDFDF;
+}
+
+td.last, th.last {
+	text-align: left;
+	background: none;
+}
+
+/* Cells in even rows (2,4,6...) are one color */ 
+tr:nth-child(even) td.nonlast { 
+	background: #F1F1F1; 
+}   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */ 
+tr:nth-child(odd) td.nonlast { 
+	background: #FEFEFE; 
+}
+
+.books {
+	text-align: left;
+}
+
+
+
